@@ -1,6 +1,7 @@
 import { Image, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+import SendIcpButton from "@/components/Payment";
 import { images } from "@/constants";
 
 const Chat = () => {
@@ -21,6 +22,11 @@ const Chat = () => {
           <Text className="text-base mt-2 text-center px-7">
             Start a conversation with your friends and family
           </Text>
+
+          <SendIcpButton
+            recipientAddress="u6xs5-7zxcf-hotg4-vlas2-g7vgg-q2yek-wm7co-ngvb6-6yzs5-mhtic-hqe"
+            amount={0.1}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
