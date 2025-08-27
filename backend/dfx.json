@@ -4,8 +4,9 @@
     "ride_backend": {
       "main": "ride_backend/main.mo",
       "type": "motoko"
-    },
-    "networks": {
+    }
+  },
+  "networks": {
     "local": {
       "bind": "127.0.0.1:4943",
       "type": "ephemeral"
@@ -14,4 +15,10 @@
       "providers": ["https://ic0.app"],
       "type": "persistent"
     }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  }
 }
